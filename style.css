@@ -1,0 +1,119 @@
+body{
+    font-family: "basic-sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+
+
+.header{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid #3755a9;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.header-title{
+    margin: 0;
+    font-family: quiverleaf-cf, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: #3755a9;
+}
+
+.header-nav{
+    justify-content: right;
+}
+
+.index .grid{
+    display: grid;
+    max-width: auto-fit;
+    margin: 0 auto;
+    grid-template-columns: 500px 500px;
+    /*grid-template-columns: 1fr 1fr;*/
+    /*grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));/*
+    /*grid-template-columns: repeat(3,1fr);*/
+    /*grid-template-columns: repeat (auto-fit, 300px);*/
+    grid-template-columns: repeat (auto-fit, minmax(320px, 1fr));
+    justify-content: center;
+    gap: 30px;
+}
+
+.projet-large{
+    grid-column: span 2;
+}
+
+.item{
+    display:grid;
+    width:500px; /* selon votre maquette */
+    height: 450px;
+    text-decoration: none;
+  }
+  
+  .item>*{
+    grid-column: 1;
+    grid-row:1;
+    justify-self:center;
+    align-self:center;
+    color:#f2f4fdb0;
+    transition:5s;
+  }
+  
+  .item:hover img{
+    opacity:-1;
+  }
+  
+  
+  .bandeau.sticky{
+    position: sticky; 
+    top : 45px;
+}
+
+.bandeau-sticky>*{
+  grid-column: 1;
+    grid-row:1;
+    justify-self:left;
+    align-self:left;
+    color:#2a56f6b0;
+    transition: none;
+}
+
+.bandeau-sticky a{
+  font-size: 15px;
+  font-family:sans-serif;
+  /* color: white; */
+}
+
+.bandeau-sticky p{
+  opacity:1;
+  text-decoration: none;
+    padding: 4px;
+    color: white;
+
+    background: #3755a9;
+    font-size: 16px;
+    border: 1px solid #3755a9;
+    border-radius: 40px;
+
+    display: inline-block;
+    margin: 4px;
+}
+
+.footer{
+  padding-top: 300px;
+  font-size: 10px;
+  padding-bottom: 50px;
+  justify-content: center;
+}
